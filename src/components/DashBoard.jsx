@@ -127,8 +127,10 @@ const DashBoard = () => {
                   src="https://cdn-icons-png.flaticon.com/512/3373/3373123.png"
                   alt=""
                 />
-                <Progress_bar />
+                {/* <Progress_bar /> */}
+                <div className="cur_bmi">24</div>
               </div>
+              
             </div>
           </div>
           <div className="sec2">
