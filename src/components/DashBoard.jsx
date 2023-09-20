@@ -4,6 +4,7 @@ import Side_menu from "./Side_menu";
 // import gsap from "gsap";
 import Magnetic from "../Styling/Magnetic";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import ContestCard from "./Contest_Card/C_card";
 
 const DashBoard = () => {
   const [menu, setmenu] = useState(false);
@@ -11,6 +12,34 @@ const DashBoard = () => {
   const handleMenuIn = () => {
     setmenu(!menu);
   };
+
+  const ContestList = [
+    {
+      title: "30-Day Squat Challenge",
+      info: "Challenge yourself with a 30-day squat challenge",
+      shortDescription: "Strengthen your lower body and core in 30 days.",
+    },
+    {
+      title: "7-Day Plank Challenge",
+      info: "Strengthen your core with a 7-day plank challenge",
+      shortDescription: "Build core strength in just 7 days.",
+    },
+    {
+      title: "Cardio Blast Challenge",
+      info: "Boost your cardio fitness with this challenge",
+      shortDescription: "Elevate your heart rate and endurance.",
+    },
+    {
+      title: "Yoga and Meditation Challenge",
+      info: "Find balance and inner peace in a 21-day yoga and meditation challenge",
+      shortDescription: "Balance mind and body in 21 days.",
+    },
+    {
+      title: "Running Streak Challenge",
+      info: "Run every day for a month with our running streak challenge",
+      shortDescription: "Run daily for a month, stay motivated.",
+    },
+  ];
 
   return (
     <div className="dashboard">
@@ -36,23 +65,23 @@ const DashBoard = () => {
       </div>
 
       <div className="main">
-      <div className="first">
-        <div className="sec1">
-          <div className="sec1_1">
-            <div className="rating">
-              <CircularProgressbar
-                className="cur_rating"
-                value={100}
-                styles={buildStyles({
-                  pathColor: "salmon",
-                  textColor: "white",
-                  trailColor: "salmon",
-                })}
-                text="Rating"
-              />
-            </div>
-            <div className="badges">
-              {/* <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
+        <div className="first">
+          <div className="sec1">
+            <div className="sec1_1">
+              <div className="rating">
+                <CircularProgressbar
+                  className="cur_rating"
+                  value={100}
+                  styles={buildStyles({
+                    pathColor: "salmon",
+                    textColor: "white",
+                    trailColor: "salmon",
+                  })}
+                  text="Rating"
+                />
+              </div>
+              <div className="badges">
+                {/* <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
                    <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
                    <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
                    <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
@@ -60,34 +89,43 @@ const DashBoard = () => {
                    <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
                    <img src="https://cdn.pixabay.com/photo/2016/10/29/20/26/award-1781445_1280.png" alt="img" />
                    <img src="https://cdn.pixabay.com/photo/2013/07/13/01/21/award-155595_1280.png" alt="img" /> */}
+              </div>
+              <h2>badges</h2>
             </div>
-            <h2>badges</h2>
-          </div>
 
-          <div className="sec1_2">
-            <div className="jump">
-              <button>Jump to next Level</button>
+            <div className="sec1_2">
+              <div className="jump">
+                <button>Jump to next Level</button>
+              </div>
+              <div className="bmi">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/3373/3373123.png"
+                  alt=""
+                />
+                <div className="cur_bmi">24</div>
+              </div>
             </div>
-            <div className="bmi">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/3373/3373123.png"
-                alt=""
-              />
-              <div className="cur_bmi">24</div>
-            </div>
+          </div>
+          <div className="sec2">
+            <div className="undecided"></div>
           </div>
         </div>
-        <div className="sec2">
-          <div className="undecided"></div>
-        </div>
-      </div>
 
-      <div className="second">
+        <div className="second">
           <div className="sec1_3">
-          <h2>Weekly Contest</h2>
-          <div className="cont_list"></div>
+            <h2>Weekly Contest</h2>
+            <div className="cont_list" id="style-15">
+              {ContestList.map((Contest) => (
+                <ContestCard
+                  key={Contest.title}
+                  title={Contest.title}
+                  info={Contest.info}
+                  description={Contest.shortDescription}
+                />
+              ))}
+            </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
   );
