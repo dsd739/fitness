@@ -1,5 +1,5 @@
 import React from "react";
-import "./c_card.scss"; // Import your CSS file or use inline styles
+// import "./c_card.scss"; // Import your CSS file or use inline styles
 
 // Define your movie list as an array of objects
 
