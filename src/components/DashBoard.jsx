@@ -5,6 +5,7 @@ import Side_menu from "./Side_menu";
 import Magnetic from "../Styling/Magnetic";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import ContestCard from "./Contest_Card/C_card";
+import Progress_bar from "./progress_bar/Progress_bar";
 
 const DashBoard = () => {
   const [menu, setmenu] = useState(false);
@@ -80,15 +81,39 @@ const DashBoard = () => {
                   text="Rating"
                 />
               </div>
-              <div className="badges">
-                {/* <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
-                   <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
-                   <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
-                   <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
-                   <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
-                   <img src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg" alt="img" />
-                   <img src="https://cdn.pixabay.com/photo/2016/10/29/20/26/award-1781445_1280.png" alt="img" />
-                   <img src="https://cdn.pixabay.com/photo/2013/07/13/01/21/award-155595_1280.png" alt="img" /> */}
+              <div className="badges" id="style-1">
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
+                  alt="img"
+                />
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
+                  alt="img"
+                />
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
+                  alt="img"
+                />
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
+                  alt="img"
+                />
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
+                  alt="img"
+                />
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
+                  alt="img"
+                />
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/10/29/20/26/award-1781445_1280.png"
+                  alt="img"
+                />
+                <img
+                  src="https://cdn.pixabay.com/photo/2013/07/13/01/21/award-155595_1280.png"
+                  alt="img"
+                />
               </div>
               <h2>badges</h2>
             </div>
@@ -102,7 +127,7 @@ const DashBoard = () => {
                   src="https://cdn-icons-png.flaticon.com/512/3373/3373123.png"
                   alt=""
                 />
-                <div className="cur_bmi">24</div>
+                <Progress_bar />
               </div>
             </div>
           </div>

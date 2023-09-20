@@ -3,6 +3,11 @@
   src: url(./Style_components/text/header2.woff2);
 }
 
+. {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
