@@ -32,6 +32,9 @@ const DashBoard = () => {
         </Magnetic>
       </div>
 
+      <div className="name">
+        <h1>HEY! NAME</h1>
+      </div>
       <div className="sec1">
 
         <div className="sec1_1">
@@ -70,7 +73,7 @@ const DashBoard = () => {
       </div>
 
       <div className="sec2">
-        
+
       </div>
 
 
