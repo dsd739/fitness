@@ -36,17 +36,27 @@
     fill: white;
 }
 
+.main{
+    display: flex;
+    height: 75vh;
+    width: 100%;
+}
+.dashboard .first{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
 .dashboard .sec1{
     height: 40vh;
     width: 100%;
     display: flex;
     /* background-color: salmon; */
     justify-content: space-around;
-    margin-top: 7vh;
+    margin-top: 3vh;
 }
 
 .dashboard .sec1 .sec1_1{
-    width: 25%;
+    width: 45%;
     height: 100%;
     /* background-color: powderblue; */
     display: flex;
@@ -117,7 +127,7 @@
 
 .dashboard .sec1 .sec1_2{
     /* height: 100%; */
-    width: 25%;
+    width: 45%;
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
@@ -176,9 +186,31 @@
     justify-content: center;
 }
 
-.dashboard .sec1 .sec1_3{
+.main .sec2{
+    height: 40%;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .sec2 .undecided{
     height: 100%;
+    width: 95%;
+    border-radius: 20px;
+    background-color: rgb(21, 23, 28);
+}
+
+.main .second{
+    height: 95%;
     width: 40%;
+}
+
+.main .second .sec1_3{
+    height: 100%;
+    width: 90%;
     /* background-color: orange; */
     border-radius: 20px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -186,22 +218,19 @@
     color: white;
 }
 
-.dashboard .sec1 .sec1_3 h2{
+.main .second .sec1_3 h2{
     padding: 2vh;
     border-bottom: 1px solid white;
 }
 
-.dashboard .sec1 .sec1_3 .cont_list{
+.dashboard .second .sec1_3 .cont_list{
     border: 1px solid white;
     margin: 1vw;
-    height: 60%;
+    height: 80%;
     border-radius: 20px;
     /* color: white; */
     overflow-y: scroll;
 }
 
-.dashboard .sec2{
-    background-color: aqua;
-    height: 30%;
-    width: 100%;
-}
+
+
