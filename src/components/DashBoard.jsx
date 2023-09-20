@@ -124,12 +124,9 @@ const DashBoard = () => {
                   alt=""
                 />
                 {/* <Progress_bar /> */}
-<<<<<<< HEAD
-=======
+
                 <div className="cur_bmi">24</div>
->>>>>>> 37f370b195acbe5b0734eb2371203f03fb90e582
               </div>
-              
             </div>
           </div>
           <div className="sec2">
