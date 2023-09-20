@@ -1,0 +1,140 @@
+/* Variables */
+:root {
+    --fontSize: 16px;
+    --fontSizeSmall: 14px;
+    --fontPrimary: 'Montserrat', 'Helvetica Neue', 'Lucida Grande', Arial, Verdana, sans-serif;
+    --fontHeader: var(--fontPrimary);
+    --fontBold: 600;
+    --paddingSize: 5px;
+    --padding-xl: calc(5 * var(--paddingSize));
+    --padding-lg: calc(4 * var(--paddingSize));
+    --padding: calc(3 * var(--paddingSize));
+    --padding-sm: calc(2 * var(--paddingSize));
+    --padding-xs: var(--paddingSize);
+    --inputSizeLg: 60px;
+    --primaryColor: #EC3742;
+    --textColor: #FFFFFF;
+    --textColorDark: #333F52;
+  }
+  
+  /* General */
+  body {
+    background: #212121;
+    padding: var(--padding-xl) 0;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /* Code */
+  #pricing .plan {
+    position: relative;
+    display: block;
+    background: white;
+    color: var(--textColorDark);
+    padding: var(--padding-xl);
+    padding-bottom: var(--inputSizeLg);
+    text-align: center;
+    text-transform: uppercase;
+    margin: var(--padding) 0;
+    overflow: hidden;
+    cursor: default;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.10), 0 0 10px 0 rgba(0, 0, 0, 0.10), 0 0 20px 0 rgba(0, 0, 0, 0.10);
+    transition: all 200ms ease-in;
+  }
+  
+  #pricing .plan.plan-2 {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  }
+  
+  #pricing .plan.plan-3 {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  }
+  
+  #pricing .plan.plan-4 {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  }
+  
+  #pricing .plan.plan-5 {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  }
+  
+  #pricing .plan.plan-6 {
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  }
+  
+  #pricing .plan .plan-name {
+    font-weight: var(--fontBold);
+    color: rgba(0, 0, 0, 0.65);
+    letter-spacing: 0.05em;
+  }
+  
+  #pricing .plan .plan-summary {
+    text-transform: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    font-size: var(--fontSizeSmall);
+  }
+  
+  #pricing .plan .plan-price {
+    height: 240px;
+    position: relative;
+    text-align: right;
+  }
+  
+  #pricing .plan .plan-price h1 {
+    position: absolute;
+    bottom: calc(-2.5 * var(--padding-xl));
+    width: 100%;
+    font-size: 280px;
+    margin: 0;
+    right: var(--padding);
+    line-height: 1;
+    font-weight: var(--fontBold);
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: none;
+    transition: all 200ms ease-in;
+  }
+  
+  #pricing .plan .plan-price h1 small {
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    display: block;
+    font-size: 100px;
+    text-shadow: none;
+  }
+  
+  #pricing .plan .plan-action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: var(--primaryColor);
+  }
+  
+  #pricing .plan .plan-action a {
+    display: block;
+    color: var(--textColorDark);
+    height: var(--inputSizeLg);
+    line-height: var(--inputSizeLg);
+    background: white;
+  }
+  
+  #pricing .plan:hover {
+    transform: translate(0, -3px);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-in;
+  }
+  
+  #pricing .plan:hover .plan-price h1 {
+    text-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: all 200ms ease-in;
+  }
+  
+  #pricing .plan:hover .plan-action a {
+    color: var(--primaryColor);
+  }
+  

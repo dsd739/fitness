@@ -5,7 +5,6 @@ import Side_menu from "./Side_menu";
 import Magnetic from "../Styling/Magnetic";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import ContestCard from "./Contest_Card/C_card";
-import Progress_bar from "./progress_bar/Progress_bar";
 
 const DashBoard = () => {
   const [menu, setmenu] = useState(false);
@@ -82,10 +81,7 @@ const DashBoard = () => {
                 />
               </div>
               <div className="badges" id="style-1">
-                <img
-                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
-                  alt="img"
-                />
+                <img src="./../../Data/Images/1.png" alt="img" />
                 <img
                   src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
                   alt="img"
@@ -127,7 +123,7 @@ const DashBoard = () => {
                   src="https://cdn-icons-png.flaticon.com/512/3373/3373123.png"
                   alt=""
                 />
-                <Progress_bar />
+                {/* <Progress_bar /> */}
               </div>
             </div>
           </div>
