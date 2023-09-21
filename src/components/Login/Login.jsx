@@ -2,128 +2,86 @@ import React, { useState } from "react";
 import "./login.css";
 
 export default function Login() {
-  const [isLoginFormVisible, setLoginFormVisible] = useState(false);
+  const [isSignUp, setIsSignUp] = useState(false);
 
-  const toggleForms = () => {
-    setLoginFormVisible(!isLoginFormVisible);
+  const handleSignUpClick = () => {
+    setIsSignUp(true);
+  };
+
+  const handleSignInClick = () => {
+    setIsSignUp(false);
   };
 
   return (
-    <>
-      <section className="user">
-        <div className="user_options-container">
-          <div className="user_options-text">
-            <div className="user_options-unregistered">
-              <h2 className="user_unregistered-title">
-                Don't have an account?
-              </h2>
-              <p className="user_unregistered-text">
-                Banjo tote bag bicycle rights, High Life sartorial cray craft
-                beer whatever street art fap.
+    <div className="container-login">
+      <div className={`container ${isSignUp ? "right-panel-active" : ""}`}>
+        <div className="form-container sign-up-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <div className="social-container">
+              <a href="#" className="social">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="social">
+                <i className="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" className="social">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button className="buttonn">Sign Up</button>
+          </form>
+        </div>
+        <div className="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div className="social-container">
+              <a href="#" className="social">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="social">
+                <i className="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" className="social">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button className="buttonn">Sign In</button>
+          </form>
+        </div>
+        <div className="overlay-container">
+          <div className="overlay">
+            <div
+              className={`overlay-panel overlay-left ${
+                isSignUp ? "" : "overlay-right"
+              }`}
+            >
+              <h1>{isSignUp ? "Hello, Friend!" : "Welcome Back!"}</h1>
+              <p>
+                {isSignUp
+                  ? "Enter your personal details and start the journey with us"
+                  : "To keep connected with us, please login with your personal info"}
               </p>
               <button
-                className="user_unregistered-signup"
-                onClick={toggleForms}
+                className="ghost buttonn"
+                onClick={isSignUp ? handleSignInClick : handleSignUpClick}
               >
-                Sign up
+                {isSignUp ? "Sign In" : "Sign Up"}
               </button>
             </div>
-
-            <div className="user_options-registered">
-              <h2 className="user_registered-title">Have an account?</h2>
-              <p className="user_registered-text">
-                Banjo tote bag bicycle rights, High Life sartorial cray craft
-                beer whatever street art fap.
-              </p>
-              <button className="user_registered-login" onClick={toggleForms}>
-                Login
-              </button>
-            </div>
-          </div>
-
-          <div
-            className={`user_options-forms ${
-              isLoginFormVisible ? "bounceLeft" : "bounceRight"
-            }`}
-          >
-            {isLoginFormVisible ? (
-              <div className="user_forms-login">
-                <h2 className="forms_title">Login</h2>
-                <form className="forms_form">
-                  <fieldset className="forms_fieldset">
-                    <div className="forms_field">
-                      <input
-                        type="email"
-                        placeholder="Email"
-                        className="forms_field-input"
-                        required
-                        autoFocus
-                      />
-                    </div>
-                    <div className="forms_field">
-                      <input
-                        type="password"
-                        placeholder="Password"
-                        className="forms_field-input"
-                        required
-                      />
-                    </div>
-                  </fieldset>
-                  <div className="forms_buttons">
-                    <button type="button" className="forms_buttons-forgot">
-                      Forgot password?
-                    </button>
-                    <input
-                      type="submit"
-                      value="Log In"
-                      className="forms_buttons-action"
-                    />
-                  </div>
-                </form>
-              </div>
-            ) : (
-              <div className="user_forms-signup">
-                <h2 className="forms_title">Sign Up</h2>
-                <form className="forms_form">
-                  <fieldset className="forms_fieldset">
-                    <div className="forms_field">
-                      <input
-                        type="text"
-                        placeholder="Full Name"
-                        className="forms_field-input"
-                        required
-                      />
-                    </div>
-                    <div className="forms_field">
-                      <input
-                        type="email"
-                        placeholder="Email"
-                        className="forms_field-input"
-                        required
-                      />
-                    </div>
-                    <div className="forms_field">
-                      <input
-                        type="password"
-                        placeholder="Password"
-                        className="forms_field-input"
-                        required
-                      />
-                    </div>
-                  </fieldset>
-                  <div className="forms_buttons">
-                    <input
-                      type="submit"
-                      value="Sign up"
-                      className="forms_buttons-action"
-                    />
-                  </div>
-                </form>
-              </div>
-            )}
           </div>
         </div>
-      </section>
-    </>
+      </div>
+
+      <footer></footer>
+    </div>
   );
 }

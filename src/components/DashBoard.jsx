@@ -5,12 +5,12 @@ import Side_menu from "./Side_menu";
 import Magnetic from "../Styling/Magnetic";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import ContestCard from "./Contest_Card/C_card";
-import b1 from '../Style_components/badges/1.png'
-import b2 from '../Style_components/badges/2.png'
-import b3 from '../Style_components/badges/3.png'
-import b4 from '../Style_components/badges/4.png'
-import b5 from '../Style_components/badges/5.png'
-import b6 from '../Style_components/badges/6.png'
+import b1 from "../Style_components/badges/1.png";
+import b2 from "../Style_components/badges/2.png";
+import b3 from "../Style_components/badges/3.png";
+import b4 from "../Style_components/badges/4.png";
+import b5 from "../Style_components/badges/5.png";
+import b6 from "../Style_components/badges/6.png";
 
 const DashBoard = () => {
   const [menu, setmenu] = useState(false);
@@ -88,26 +88,11 @@ const DashBoard = () => {
               </div>
               <div className="badges" id="style-1">
                 <img src={b1} alt="img" />
-                <img
-                  src={b2}
-                  alt="img"
-                />
-                <img
-                  src={b3}
-                  alt="img"
-                />
-                <img
-                  src={b4}
-                  alt="img"
-                />
-                <img
-                  src={b5}
-                  alt="img"
-                />
-                <img
-                  src={b6}
-                  alt="img"
-                />
+                <img src={b2} alt="img" />
+                <img src={b3} alt="img" />
+                <img src={b4} alt="img" />
+                <img src={b5} alt="img" />
+                <img src={b6} alt="img" />
                 <img
                   src="https://cdn.pixabay.com/photo/2016/10/29/20/26/award-1781445_1280.png"
                   alt="img"
@@ -119,7 +104,6 @@ const DashBoard = () => {
               </div>
               <h2>badges</h2>
             </div>
-
             <div className="sec1_2">
               <div className="jump">
                 <button>Jump to next Level</button>
@@ -129,8 +113,7 @@ const DashBoard = () => {
                   src="https://cdn-icons-png.flaticon.com/512/3373/3373123.png"
                   alt=""
                 />
-                {/* <Progress_bar /> */}
-
+                {/*Progress_bar */}
                 <div className="cur_bmi">24</div>
               </div>
             </div>
