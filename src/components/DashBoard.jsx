@@ -11,6 +11,7 @@ import b3 from "../Style_components/badges/3.png";
 import b4 from "../Style_components/badges/4.png";
 import b5 from "../Style_components/badges/5.png";
 import b6 from "../Style_components/badges/6.png";
+import Progressbar from "./Progressbar.jsx/Progressbar";
 
 const DashBoard = () => {
   const [menu, setmenu] = useState(false);
@@ -119,7 +120,9 @@ const DashBoard = () => {
             </div>
           </div>
           <div className="sec2">
-            <div className="undecided"></div>
+            <div className="undecided">
+              <Progressbar />
+            </div>
           </div>
         </div>
 
