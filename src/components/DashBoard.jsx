@@ -81,39 +81,17 @@ const DashBoard = () => {
                 />
               </div>
               <div className="badges" id="style-1">
-                <img src="./../../Data/Images/1.png" alt="img" />
-                <img
-                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
-                  alt="img"
-                />
-                <img
-                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
-                  alt="img"
-                />
-                <img
-                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
-                  alt="img"
-                />
-                <img
-                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
-                  alt="img"
-                />
-                <img
-                  src="https://cdn.pixabay.com/photo/2018/04/11/11/54/small-poly-3310319_1280.jpg"
-                  alt="img"
-                />
-                <img
-                  src="https://cdn.pixabay.com/photo/2016/10/29/20/26/award-1781445_1280.png"
-                  alt="img"
-                />
-                <img
-                  src="https://cdn.pixabay.com/photo/2013/07/13/01/21/award-155595_1280.png"
-                  alt="img"
-                />
+                <img src="../../Data/Images/1.png" alt="img" />
+                <img src="./../../Data/Images/2.png" alt="img" />
+                <img src="./../../Data/Images/3.png" alt="img" />
+                <img src="./../../Data/Images/4.png" alt="img" />
+                <img src="./../../Data/Images/5.png" alt="img" />
+                <img src="./../../Data/Images/6.png" alt="img" />
+                <img src="./../../Data/Images/7.png" alt="img" />
+                <img src="./../../Data/Images/8.png" alt="img" />
               </div>
               <h2>badges</h2>
             </div>
-
             <div className="sec1_2">
               <div className="jump">
                 <button>Jump to next Level</button>
@@ -123,8 +101,7 @@ const DashBoard = () => {
                   src="https://cdn-icons-png.flaticon.com/512/3373/3373123.png"
                   alt=""
                 />
-                {/* <Progress_bar /> */}
-
+                {/*Progress_bar */}
                 <div className="cur_bmi">24</div>
               </div>
             </div>
