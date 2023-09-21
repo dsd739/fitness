@@ -1,12 +1,20 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import "./login.scss";
 
 export default function Login() {
   const [isLoginFormVisible, setLoginFormVisible] = useState(true);
+=======
+import "./login.css";
+
+export default function Login() {
+  const [isLoginFormVisible, setLoginFormVisible] = useState(false);
+>>>>>>> 7c51c7f14f8014964427ab51c6d32dfe19a30f3c
 
   const toggleForms = () => {
     setLoginFormVisible(!isLoginFormVisible);
   };
+<<<<<<< HEAD
   const [userFormsClass, setUserFormsClass] = useState("");
 
   // Function to handle "Sign Up" button click
@@ -18,6 +26,9 @@ export default function Login() {
   const handleLoginClick = () => {
     setUserFormsClass("bounceLeft");
   };
+=======
+
+>>>>>>> 7c51c7f14f8014964427ab51c6d32dfe19a30f3c
   return (
     <>
       <section className="user">
@@ -33,7 +44,11 @@ export default function Login() {
               </p>
               <button
                 className="user_unregistered-signup"
+<<<<<<< HEAD
                 onClick={handleSignUpClick}
+=======
+                onClick={toggleForms}
+>>>>>>> 7c51c7f14f8014964427ab51c6d32dfe19a30f3c
               >
                 Sign up
               </button>
@@ -45,10 +60,14 @@ export default function Login() {
                 Banjo tote bag bicycle rights, High Life sartorial cray craft
                 beer whatever street art fap.
               </p>
+<<<<<<< HEAD
               <button
                 className="user_registered-login"
                 onClick={handleLoginClick}
               >
+=======
+              <button className="user_registered-login" onClick={toggleForms}>
+>>>>>>> 7c51c7f14f8014964427ab51c6d32dfe19a30f3c
                 Login
               </button>
             </div>
