@@ -17,6 +17,16 @@
   z-index: 99;
 }
 
+.dashboard .logo{
+  font-family: cursive;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
 .menu {
   height: 5vh;
   width: 5vh;
@@ -227,29 +237,3 @@
   border-radius: 20px;
   overflow-y: scroll;
 }
-
-
-/* #style-15::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #fff;
-  background-image: -webkit-gradient(
-    linear,
-    40% 0%,
-    75% 84%,
-    from(#ffffff),
-    to(#ffffff),
-    color-stop(0.6, #001cb8)
-  );
-}
-#style-1::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #e10000;
-  background-image: -webkit-gradient(
-    linear,
-    40% 0%,
-    75% 84%,
-    from(#ffffff),
-    to(#ffffff),
-    color-stop(0.6, #ffffff)
-  );
-} */
