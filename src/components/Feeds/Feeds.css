@@ -24,5 +24,7 @@
 } 
 
 .feeds .subfeeds .post{
-    height: 90%;
+    height: 95%;
+    width: 60%;
+    background-color: salmon;
 }
