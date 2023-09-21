@@ -1,0 +1,12 @@
+ul.contents {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+}
+
+.contents > li {
+  display: grid;
+  place-items: center;
+  scroll-snap-align: center;
+  padding: 20px 0;
+}

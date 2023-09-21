@@ -1,22 +1,13 @@
-import React from 'react'
-import './Feeds.css';
+import React from "react";
+import "./Feeds.css";
+import Scroller from "../Scroller/Scroller";
 
 const Feeds = () => {
   return (
     <>
-    <div className='feeds'>
-        <div className="feedsnav"></div>
-        <div className="subfeeds">
-            <div className="post">
-
-            </div>
-            <div className="desciption">
-                
-            </div>
-        </div>
-    </div>
+      <Scroller />
     </>
-  )
-}
+  );
+};
 
-export default Feeds
+export default Feeds;
