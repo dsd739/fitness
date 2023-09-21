@@ -105,17 +105,7 @@ const DashBoard = () => {
               <h2>badges</h2>
             </div>
             <div className="sec1_2">
-              <div className="jump">
-                <button>Jump to next Level</button>
-              </div>
-              <div className="bmi">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/3373/3373123.png"
-                  alt=""
-                />
-                {/*Progress_bar */}
-                <div className="cur_bmi">24</div>
-              </div>
+              
             </div>
           </div>
           <div className="sec2">
