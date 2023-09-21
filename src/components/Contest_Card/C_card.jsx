@@ -1,6 +1,6 @@
 import React from "react";
 
-// import "./c_card.css";
+import "./c_card.css";
 
 // Define your movie list as an array of objects
 
