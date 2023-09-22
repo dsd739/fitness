@@ -48,6 +48,7 @@ const DashBoard = () => {
     },
   ];
 
+
   return (
     <div className="dashboard">
       <Side_menu show={menu} click={handleMenuIn} />
@@ -126,7 +127,154 @@ const DashBoard = () => {
           </div>
           <div className="sec2">
             <div className="undecided">
-              <Progressbar />
+              {/* <Progressbar /> */}
+              <div className="topmargin">
+              <div className="roww">
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1">🔥</div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>              
+              </div>
+              <div className="roww">
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>              
+              </div>
+              <div className="roww">
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>              
+              </div>
+              <div className="roww">
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>              
+              </div>
+              <div className="roww">
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>
+              <div className="streak1"></div>              
+              </div>
+              </div>
             </div>
           </div>
         </div>

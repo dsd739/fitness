@@ -35,8 +35,9 @@ a {
 }
 .buttonn {
   border-radius: 20px;
-  border: 1px solid #ff4b2b;
-  background-color: #ff4b2b;
+  border: 1px solid white;
+  background: rgb(127,34,180);
+background: linear-gradient(163deg, rgba(127,34,180,1) 0%, rgba(21,46,89,0.9893207282913166) 49%, rgba(25,2,30,0.9893207282913166) 98%);
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -154,8 +155,8 @@ a {
 
 .overlay {
   background: #ff416c;
-  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
-  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background: rgb(127,34,180);
+background: linear-gradient(163deg, rgba(127,34,180,1) 0%, rgba(21,46,89,0.9893207282913166) 49%, rgba(25,2,30,0.9893207282913166) 98%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./progressbar.css";
 
 class Progressbar extends Component {
-  componentDidMount() {
-    this.setStepStatus();
-  }
+  // componentDidMount() {
+  //   this.setStepStatus();
+  // }
 
   setStepStatus = () => {
     const steps = document.querySelectorAll(".step");
@@ -34,6 +34,12 @@ class Progressbar extends Component {
           </div>
           <div className="step active" data-desc="Review & Post">
             3
+          </div>
+          <div className="step" data-desc="Your order">
+            4
+          </div>
+          <div className="step" data-desc="Your order">
+            4
           </div>
           <div className="step" data-desc="Your order">
             4
