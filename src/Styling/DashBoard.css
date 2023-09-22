@@ -2,8 +2,18 @@
   /* background-color:  rgb(21, 23, 28); */
   background-color: #eedddd;
   background-color: #dbd6c9;
+  background: rgb(127, 34, 180);
+  background: linear-gradient(
+    163deg,
+    rgba(127, 34, 180, 1) 0%,
+    rgba(21, 46, 89, 0.9893207282913166) 49%,
+    rgba(25, 2, 30, 0.9893207282913166) 98%
+  );
   height: 100vh;
   width: 100%;
+}
+.box {
+  /* 3 boxes left side */
 }
 
 .nav {
@@ -17,7 +27,7 @@
   z-index: 99;
 }
 
-.dashboard .logo{
+.dashboard .logo {
   font-family: cursive;
   height: 100%;
   width: 10%;

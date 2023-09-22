@@ -72,9 +72,9 @@ const DashBoard = () => {
       </div>
 
       <div className="main">
-        <div className="first">
+        <div className="first ">
           <div className="sec1">
-            <div className="sec1_1">
+            <div className="sec1_1 box">
               <div className="rating">
                 <CircularProgressbar
                   className="cur_rating"
@@ -105,7 +105,7 @@ const DashBoard = () => {
               </div>
               <h2>badges</h2>
             </div>
-            <div className="sec1_2">
+            <div className="sec1_2 box">
               <div className="jump">
                 <button>Jump to next Level</button>
               </div>
@@ -119,8 +119,8 @@ const DashBoard = () => {
               </div>
             </div>
           </div>
-          <div className="sec2">
-            <div className="undecided">
+          <div className="sec2 ">
+            <div className="undecided box">
               <Progressbar />
             </div>
           </div>
