@@ -3,7 +3,7 @@
   src: url(./Style_components/text/header2.woff2);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -47,8 +47,13 @@
   position: relative;
   left: 100%;
   background-color: #dbd6c9;
-  background: rgb(127,34,180);
-  background: linear-gradient(163deg, rgba(127,34,180,1) 0%, rgba(21,46,89,0.9893207282913166) 49%, rgba(25,2,30,0.9893207282913166) 98%);  
+  background: rgb(127, 34, 180);
+  background: linear-gradient(
+    163deg,
+    rgba(127, 34, 180, 1) 0%,
+    rgba(21, 46, 89, 0.9893207282913166) 49%,
+    rgba(25, 2, 30, 0.9893207282913166) 98%
+  );
   border-radius: 40px 0 0 40px;
   margin-top: 1vh;
   display: flex;
@@ -90,7 +95,6 @@
   font-weight: 999;
   opacity: 85;
   margin: 0;
-
 }
 
 .section1 ul li {
