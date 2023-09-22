@@ -4,6 +4,7 @@ import gsap from 'gsap'
 // import insta from '../Style_components/Instagram-Logo.wine.svg'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { Link } from 'react-router-dom';
 
 const Side_menu = ({show,click}) => {
 
@@ -45,8 +46,8 @@ const Side_menu = ({show,click}) => {
               <div className="goal">
                 {/* <div className="cur_level"></div> */}
                 <div className="progress">
-                <CircularProgressbar className="cur_level" value={77} styles={buildStyles({ pathColor:"salmon", textColor:"white"})} text='77%'/>
-                <CircularProgressbar className="cur_level" value={77} styles={buildStyles({ pathColor:"salmon", textColor:"white"})} text='77%'/>
+                <CircularProgressbar className="cur_level" value={77} styles={buildStyles({ pathColor:"rgb(200, 176, 255)", textColor:"white"})} text='77%'/>
+                <CircularProgressbar className="cur_level" value={77} styles={buildStyles({ pathColor:"rgb(200, 176, 255)", textColor:"white"})} text='77%'/>
                 </div>
                 {/* <div className="cur_per"></div> */}
                 <div className="label">

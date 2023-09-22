@@ -76,16 +76,24 @@ const DashBoard = () => {
           <div className="sec1">
             <div className="sec1_1">
               <div className="rating">
+                <div className="current_rating">
                 <CircularProgressbar
                   className="cur_rating"
                   value={100}
                   styles={buildStyles({
-                    pathColor: "salmon",
+                    pathColor: "#f14b72",
                     textColor: "white",
-                    trailColor: "salmon",
+                    trailColor: "#f14b72",
                   })}
                   text="Rating"
                 />
+                <h5>Current Rating</h5>
+                </div>
+
+                <div className="profile">
+                  <img src="https://yt3.googleusercontent.com/-CFTJHU7fEWb7BYEb6Jh9gm1EpetvVGQqtof0Rbh-VQRIznYYKJxCaqv_9HeBcmJmIsp2vOO9JU=s900-c-k-c0x00ffffff-no-rj" alt="" />
+                  <h5>Profile</h5>
+                </div>
               </div>
               <div className="badges" id="style-1">
                 <img src={b1} alt="img" />
@@ -106,7 +114,14 @@ const DashBoard = () => {
               <h2>badges</h2>
             </div>
             <div className="sec1_2">
-              
+              <div className="row1">
+                <div className="box1"><h5>Steps</h5></div>
+                <div className="box2"><h5>Water</h5></div>
+              </div>
+              <div className="row2">
+                <div className="box3"><h5>BMI</h5></div>
+                <div className="box4"><h5>Nutrition</h5></div>
+              </div>
             </div>
           </div>
           <div className="sec2">
