@@ -1,7 +1,17 @@
 .dashboard {
   /* background-color:  rgb(21, 23, 28); */
-  background-color: #eedddd;
-  background-color: #dbd6c9;
+
+  /* background-color: #eedddd; */
+  /* background-color: #374070; */
+
+  /* background: #f14b72; */
+  /* background: linear-gradient(
+    315.61deg,
+    rgba(115, 203, 215, 0.6) -0.33%,
+    rgba(185, 62, 236, 0.387286) 54.52%,
+    rgba(115, 212, 215, 0.3) 89.54%
+  ),
+  #b93eec; */
   background: rgb(127, 34, 180);
   background: linear-gradient(
     163deg,
@@ -21,9 +31,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: salmon;
   padding: 0 2vw;
   background-color: whitesmoke;
+  background: transparent;
   z-index: 99;
 }
 
@@ -54,6 +64,15 @@
   fill: white;
 }
 
+.name {
+  margin: 3vh;
+  color: #fff;
+}
+.name h1 {
+  font-family: monospace;
+  font-weight: 200;
+}
+
 .main {
   display: flex;
   height: 75vh;
@@ -81,26 +100,45 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  /* border: 1px solid black; */
+  /* border: 1px solid #04d9ff; */
   /* display: flex;
     flex-direction: column; */
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  /* box-shadow: #04d9ff 0px 0px 10px 2px; */
   background-color: rgb(21, 23, 28);
   border-radius: 20px;
 }
 
 .dashboard .sec1 .sec1_1 .rating {
   height: 50%;
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
 }
 
+.dashboard .sec1 .sec1_1 .rating h5 {
+  font-weight: 200;
+  font-size: 0.78rem;
+  margin-top: 2vh;
+}
+
+.dashboard .sec1 .sec1_1 .rating img {
+  height: 12vh;
+  width: 12vh;
+  border-radius: 50%;
+  transition: 1s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
 .dashboard .sec1 .sec1_1 .rating .cur_rating {
-  height: 15vh;
+  height: 12vh;
   position: relative;
-  width: 15vh;
+  width: 12vh;
   top: 10%;
   transition: 1s;
-  background-color: salmon;
+  background-color: #f14b72;
   border-radius: 50%;
   &:hover {
     transform: scale(1.2);
@@ -148,59 +186,69 @@
   /* background-color: aqua; */
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border-radius: 20px;
   background-color: rgb(21, 23, 28);
-  padding: 1vh;
-  padding: 1vh;
+  color: white;
 }
 
-.dashboard .sec1 .sec1_2 .jump {
+.dashboard .sec1 .sec1_2 h5 {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.dashboard .sec1 .sec1_2 .row1 {
   height: 50%;
   width: 100%;
   display: flex;
+  justify-content: space-evenly;
+  margin-top: 3vh;
+}
+
+.dashboard .sec1 .sec1_2 .row1 .box1 {
+  height: 80%;
+  width: 30%;
+  background-color: rgb(32, 35, 43);
+  border-radius: 20px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dashboard .sec1 .sec1_2 .jump button {
-  height: 15vh;
-  width: 15vh;
-  border-radius: 50%;
-  border: none;
-  background-color: transparent;
-  border: 2px solid salmon;
-  transition: 0.5s;
-  background-color: salmon;
-  &:hover {
-    background-color: transparent;
-  }
-  color: white;
+.dashboard .sec1 .sec1_2 .row1 .box2 {
+  height: 80%;
+  width: 30%;
+  background-color: rgb(32, 35, 43);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.dashboard .sec1 .sec1_2 .bmi {
+.dashboard .sec1 .sec1_2 .row2 {
+  height: 50%;
   width: 100%;
-  height: 40%;
-  /* border: 1px solid white;    */
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  color: white;
 }
-
-.dashboard .sec1 .sec1_2 .bmi img {
-  height: 12vh;
-  /* width: ; */
-}
-
-.dashboard .sec1 .sec1_2 .bmi .cur_bmi {
-  border: 1px solid white;
-  height: 12vh;
-  width: 12vh;
-  border-radius: 50%;
+.dashboard .sec1 .sec1_2 .row2 .box3 {
+  height: 80%;
+  width: 30%;
+  border-radius: 20px;
+  background-color: rgb(32, 35, 43);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+.dashboard .sec1 .sec1_2 .row2 .box4 {
+  height: 80%;
+  width: 30%;
+  background-color: rgb(32, 35, 43);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main .sec2 {
@@ -233,6 +281,7 @@
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background-color: rgb(21, 23, 28);
   color: white;
+  margin-top: 3vh;
 }
 
 .main .second .sec1_3 h2 {

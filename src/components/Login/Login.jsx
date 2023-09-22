@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./login.css";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -54,7 +55,7 @@ export default function Login() {
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <a href="#">Forgot your password?</a>
-            <button className="buttonn">Sign In</button>
+            <Link className="buttonn" to="/dashboard">Sign In</Link>
           </form>
         </div>
         <div className="overlay-container">
@@ -70,12 +71,12 @@ export default function Login() {
                   ? "Enter your personal details and start the journey with us"
                   : "To keep connected with us, please login with your personal info"}
               </p>
-              <button
+              <Link
                 className="ghost buttonn"
                 onClick={isSignUp ? handleSignInClick : handleSignUpClick}
               >
                 {isSignUp ? "Sign In" : "Sign Up"}
-              </button>
+              </Link>
             </div>
           </div>
         </div>
