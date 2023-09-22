@@ -22,9 +22,6 @@
   height: 100vh;
   width: 100%;
 }
-.box {
-  /* 3 boxes left side */
-}
 
 .nav {
   height: 8vh;
@@ -32,9 +29,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2vw;
-  background-color: whitesmoke;
   background: transparent;
   z-index: 99;
+  border-bottom: 1px solid black;
 }
 
 .dashboard .logo {
@@ -44,6 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
   font-size: 2rem;
 }
 
@@ -53,6 +51,7 @@
   display: flex;
   align-items: center;
   /* transition: 0.5s; */
+  fill: white;
 }
 .nav .menu svg {
   height: 70%;
@@ -67,10 +66,12 @@
 .name {
   margin: 3vh;
   color: #fff;
+  text-align: center;
 }
 .name h1 {
   font-family: monospace;
   font-weight: 200;
+  color: white;
 }
 
 .main {
@@ -266,6 +267,9 @@
   width: 95%;
   border-radius: 20px;
   background-color: rgb(21, 23, 28);
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
 }
 
 .main .second {
@@ -290,9 +294,31 @@
 }
 
 .dashboard .second .sec1_3 .cont_list {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin: 1vw;
   height: 80%;
   border-radius: 20px;
   overflow-y: scroll;
+}
+
+.main .sec2 .undecided .roww {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  /* margin: 4vh; */
+  margin-left: 3vh;
+  margin-bottom: 2vh;
+}
+
+.streak1 {
+  height: 3vh;
+  width: 3vh;
+  background-color: white;
+  margin: 2px;
+  background-color: rgb(32, 35, 43);
+  border-radius: 1%;
+}
+
+.topmargin {
+  margin-top: 2vh;
 }
